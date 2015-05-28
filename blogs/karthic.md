@@ -71,11 +71,12 @@ Karthic's Blog
 	
 		1.	```<#link-name>{...}``` which will be translated into html as 
 		 	
-		 		<a href="#link-name">link-name(Note no # here)</a>{...}
+				<a href="#link-name">link-name(Note no # here)</a>{...}
 		 
 		 2. ```[Link-Title](#link-name){...}``` which will be translated into html as
 		 
-		 		<a href="#link-name">Link-Title</a>{...}
+				<a href="#link-name">Link-Title</a>{...}
+		 		
 	- References to links within the page will be treated just like regular links. If we want to type {#link-name} without making a reference to a link, we can choose to backslash escape that
 	- Creating references to a link (generating the ```<a name="link-name">```) can only occur at the end of a line and can be followed only by whitespace 
 		 
