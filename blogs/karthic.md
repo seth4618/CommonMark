@@ -72,8 +72,8 @@ Karthic's Blog
 		1.	```<#link-name>{...}``` which will be translated into html as 
 		 	
 				<a href="#link-name">link-name(Note no # here)</a>{...}
-		 
-		 2. ```[Link-Title](#link-name){...}``` which will be translated into html as
+		
+		2. ```[Link-Title](#link-name){...}``` which will be translated into html as
 		 
 				<a href="#link-name">Link-Title</a>{...}
 		 		
