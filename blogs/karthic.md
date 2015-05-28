@@ -62,7 +62,7 @@ Karthic's Blog
 						<<[file.md]
 						
 - ###Propsed Syntax for adding links to regions within a page
-	- Use the syntax {#link-name} at the end of a line (should be followed only by whitespace)
+	- Use the syntax ```{#link-name}``` at the end of a line (should be followed only by whitespace)
 	- When processed, this will translate to the html tag
 	
 			<a name="link-name">
@@ -78,7 +78,7 @@ Karthic's Blog
 				<a href="#link-name">Link-Title</a>{...}
 		 		
 	- References to links within the page will be treated just like regular links. If we want to type {#link-name} without making a reference to a link, we can choose to backslash escape that
-	- Creating references to a link (generating the ```<a name="link-name">```) can only occur at the end of a line and can be followed only by whitespace 
+	- Creating references to a link (by using ```{#link-name}``` to generate the ```<a name="link-name">```) can only occur at the end of a line and can be followed only by whitespace 
 		 
 
 			
