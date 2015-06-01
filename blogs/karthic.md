@@ -66,7 +66,7 @@ Karthic's Blog
 	- When processed, this will translate to the html tag
 	
 			<a name="link-name">
-		that will be placed at the start of that line
+		that will be placed at the start of that line. It cannot be indented by more than 4 spaces if it is the only text in a line. If it is indented by more than 4 spaces then it is treated as code
 	- When you want to reference to that link within the page you can use either of the following syntaxes
 	
 		1.	```<#link-name>{...}``` which will be translated into html as 
