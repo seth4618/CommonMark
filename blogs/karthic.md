@@ -80,6 +80,11 @@ Karthic's Blog
 	- References to links within the page will be treated just like regular links. If we want to type {#link-name} without making a reference to a link, we can choose to backslash escape that
 	- Creating references to a link (by using ```{#link-name}``` to generate the ```<a name="link-name">```) can only occur at the end of a line and can be followed only by whitespace 
 		 
+		 
+		 
+### Includeing CSS and Javascript files from command line
+
+The syntax we propose is  ```./cmark -I file1.css file2.js file3.md ```. This will create a new type of node called NODE_INCLUDE and the html document will be formatted to have a head and a body node, where the body contains the contents of the markdown document parsed without the included css files and the head contains statements the include statements such as ```<link rel="stylesheet" type="text/css" href="file1.css">``` or ```<script src = "file2.js"></script>```. It is required for the included files in the command line to have an extension such as .css or .js (Currently only these 2 are supported, but this can be easily extended to other files such as coffeescript)
 
 			
 			
