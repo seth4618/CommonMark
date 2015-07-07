@@ -82,10 +82,14 @@ Karthic's Blog
 		 
 		 
 		 
-### Includeing CSS and Javascript files from command line
+### Including CSS and Javascript files from command line
 
 The syntax we propose is  ```./cmark -I file1.css file2.js file3.md ```. This will create a new type of node called NODE_INCLUDE and the html document will be formatted to have a head and a body node, where the body contains the contents of the markdown document parsed without the included css files and the head contains statements the include statements such as ```<link rel="stylesheet" type="text/css" href="file1.css">``` or ```<script src = "file2.js"></script>```. It is required for the included files in the command line to have an extension such as .css or .js (Currently only these 2 are supported, but this can be easily extended to other files such as coffeescript)
 
+
+### Including CSS files from inside the markdown document
+
+The syntax we propose is of the form <<include file>> and this syntax will behave just like the command line include statement. This statement in its structure is identical to the Link Reference syntax and needs to be separated from the surrounding lines by blank lines
 			
 			
 						
